@@ -157,7 +157,7 @@ h1 {
 
 .home-shopName {
 	font-style: italic;
-	font-size: 15px;
+	font-size: 20px;
 	border-bottom: 1px solid var(--main-black);
 	width: 168px;
 	padding-bottom: 5px;
@@ -172,7 +172,7 @@ h1 {
 }
 
 .hero-text h1 {
-	font-size: 58px;
+	font-size: 65px;
 	font-family: "Urbanist", sans-serif;
 	font-weight: 800px;
 }
@@ -181,9 +181,9 @@ h1 {
 	background-color: var(--main-blue);
 	color: var(--main-white);
 	margin-top: 25px;
-	height: 50px;
-	width: 180px;
-	font-size: 15px;
+	height: 60px;
+	width: 200px;
+	font-size: 16px;
 	border: none;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	transition: 0.3s;
@@ -211,8 +211,6 @@ h1 {
 
 /* ABOUT */
 
-/* STATS */
-
 .stats {
 	text-align: center;
 }
@@ -235,8 +233,6 @@ h1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-
-/* STATS END */
 
 .about-page .container {
 	max-width: 1400px;
