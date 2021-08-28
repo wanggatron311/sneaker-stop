@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -10,8 +10,8 @@
 :root {
 	--main-white: #faf9f6;
 	--main-black: #1c1c1a;
-	--main-grey: #6f6e6c;
 	--main-blue: #1e88e5;
+	--secondary-white: #e9ebee;
 }
 
 body {
@@ -85,6 +85,10 @@ h1 {
 
 /* UTILITIES END */
 
+.home {
+	background-color: var(--secondary-white);
+}
+
 .home-bg {
 	background-image: url("../images/home-bg-cropped.jpg");
 	background-repeat: no-repeat;
@@ -113,7 +117,7 @@ h1 {
 
 .navbar ul {
 	position: relative;
-	left: -80px;
+	left: -98px;
 	display: flex;
 	margin-top: 0;
 	transition: 0.3s;
@@ -173,16 +177,16 @@ h1 {
 .hero-text h1 {
 	font-size: 65px;
 	font-family: "Urbanist", sans-serif;
-	font-weight: 800px;
+	font-weight: 700px;
 }
 
 .btn-home {
 	background-color: var(--main-blue);
 	color: var(--main-white);
 	margin-top: 25px;
-	height: 60px;
-	width: 200px;
-	font-size: 18px;
+	height: 70px;
+	width: 220px;
+	font-size: 20px;
 	border: none;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -214,7 +218,10 @@ h1 {
 
 .stats {
 	text-align: center;
-	padding-top: 50px;
+	margin-top: -40px;
+	padding: 60px 0;
+	background-color: var(--main-blue);
+	color: var(--main-white);
 }
 
 .stats-header {
@@ -234,6 +241,10 @@ h1 {
 
 .stats .grid strong {
 	font-size: 30px;
+}
+
+.about-page {
+	background-color: var(--main-white);
 }
 
 .about-page .container {
