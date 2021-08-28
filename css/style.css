@@ -166,7 +166,7 @@ h1 {
 
 .hero-text {
 	position: absolute;
-	top: 280px;
+	top: 350px;
 	color: var(--main-black);
 	line-height: 1.2;
 }
