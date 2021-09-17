@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -11,15 +10,15 @@
 :root {
 	--main-white: #faf9f6;
 	--main-black: #1c1c1a;
-	--main-grey: #6f6e6c;
 	--main-blue: #1e88e5;
+	--secondary-white: #e9ebee;
 }
 
 body {
 	background-color: var(--main-white);
 	line-height: 1.6;
 	color: var(--main-black);
-	font-family: "poppins", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -60,8 +59,8 @@ h1 {
 	height: 50px;
 	width: 180px;
 	cursor: default;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 600px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700px;
 	font-size: 15px;
 	padding: 8px;
 	text-align: center;
@@ -85,6 +84,10 @@ h1 {
 }
 
 /* UTILITIES END */
+
+.home {
+	background-color: var(--secondary-white);
+}
 
 .home-bg {
 	background-image: url("../images/home-bg-cropped.jpg");
@@ -114,7 +117,7 @@ h1 {
 
 .navbar ul {
 	position: relative;
-	left: -160px;
+	left: -98px;
 	display: flex;
 	margin-top: 0;
 	transition: 0.3s;
@@ -157,7 +160,7 @@ h1 {
 
 .home-shopName {
 	font-style: italic;
-	font-size: 15px;
+	font-size: 20px;
 	border-bottom: 1px solid var(--main-black);
 	width: 168px;
 	padding-bottom: 5px;
@@ -166,27 +169,29 @@ h1 {
 
 .hero-text {
 	position: absolute;
-	top: 280px;
+	top: 300px;
 	color: var(--main-black);
 	line-height: 1.2;
 }
 
 .hero-text h1 {
-	font-size: 58px;
+	font-size: 65px;
 	font-family: "Urbanist", sans-serif;
-	font-weight: 800px;
+	font-weight: 700px;
 }
 
 .btn-home {
 	background-color: var(--main-blue);
 	color: var(--main-white);
-	margin-top: 25px;
-	height: 50px;
-	width: 180px;
-	font-size: 15px;
+	margin-top: 15px;
+	height: 70px;
+	width: 220px;
+	font-size: 20px;
 	border: none;
+	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
 .btn-home span {
@@ -211,23 +216,21 @@ h1 {
 
 /* ABOUT */
 
-/* STATS */
-
 .stats {
 	text-align: center;
-}
-
-.stats .container {
-	max-width: 1400px;
+	margin-top: -40px;
+	padding: 40px 0;
+	background-color: var(--main-blue);
+	color: var(--main-white);
 }
 
 .stats-header {
 	font-family: "Urbanist", sans-serif;
-	font-size: 40px;
+	font-weight: 400px;
+	font-size: 50px;
 }
 
-.stats p,
-.stats .bold {
+.stats p {
 	font-size: 20px;
 }
 
@@ -236,7 +239,13 @@ h1 {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* STATS END */
+.stats .grid strong {
+	font-size: 30px;
+}
+
+.about-page {
+	background-color: var(--main-white);
+}
 
 .about-page .container {
 	max-width: 1400px;
@@ -247,17 +256,34 @@ h1 {
 }
 
 .about-hero-img {
+	height: 1000px;
+	width: 600px;
+	object-fit: contain;
+}
+
+.shoe-selection-img {
 	height: 800px;
-	width: 500px;
-	object-fit: cover;
+	width: 400px;
+	object-fit: contain;
 }
 
 .about-page ul {
-	margin-right: 180px;
+	margin-right: 300px;
 }
 
 .about-page li {
 	font-size: 20px;
 	margin: 60px 0;
 	list-style: square;
+}
+
+.about-page li:first-child,
+.about-page li:nth-child(2) {
+	list-style: none;
+	font-size: 32px;
+	font-family: "Urbanist", sans-serif;
+	font-weight: 800;
+	margin: 20px;
+	position: relative;
+	left: -30px;
 }
