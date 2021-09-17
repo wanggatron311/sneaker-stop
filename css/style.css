@@ -169,7 +169,7 @@ h1 {
 
 .hero-text {
 	position: absolute;
-	top: 350px;
+	top: 300px;
 	color: var(--main-black);
 	line-height: 1.2;
 }
@@ -183,7 +183,7 @@ h1 {
 .btn-home {
 	background-color: var(--main-blue);
 	color: var(--main-white);
-	margin-top: 25px;
+	margin-top: 15px;
 	height: 70px;
 	width: 220px;
 	font-size: 20px;
@@ -219,7 +219,7 @@ h1 {
 .stats {
 	text-align: center;
 	margin-top: -40px;
-	padding: 60px 0;
+	padding: 40px 0;
 	background-color: var(--main-blue);
 	color: var(--main-white);
 }
@@ -256,9 +256,15 @@ h1 {
 }
 
 .about-hero-img {
+	height: 1000px;
+	width: 600px;
+	object-fit: contain;
+}
+
+.shoe-selection-img {
 	height: 800px;
 	width: 400px;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .about-page ul {
@@ -271,8 +277,13 @@ h1 {
 	list-style: square;
 }
 
-.about-page li:first-child {
+.about-page li:first-child,
+.about-page li:nth-child(2) {
 	list-style: none;
-	font-size: 30px;
+	font-size: 32px;
 	font-family: "Urbanist", sans-serif;
+	font-weight: 800;
+	margin: 20px;
+	position: relative;
+	left: -30px;
 }
